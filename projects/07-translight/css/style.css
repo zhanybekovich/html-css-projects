@@ -1,0 +1,56 @@
+:root {
+  --title-font: "Oswald", sans-serif;
+  --main-font: "Open Sans", sans-serif;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.top-screen {
+  background-image: url("../images/bg-top.jpg");
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 11px 40px;
+  background-color: #005bc199;
+}
+
+.logo {
+  margin-right: 555px;
+}
+
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu-link {
+  padding: 0 14px;
+  color: var(--white, #fff);
+
+  /* p.top-menu */
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+}
