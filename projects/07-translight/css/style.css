@@ -19,8 +19,17 @@ body {
   margin: 0 auto;
 }
 
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .top-screen {
   background-image: url("../images/bg-top.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .nav {
@@ -45,12 +54,66 @@ body {
 .menu-link {
   padding: 0 14px;
   color: var(--white, #fff);
-
-  /* p.top-menu */
-  font-family: Open Sans;
+  font-family: var(--main-font);
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  text-decoration: none;
+}
+
+.header {
+  color: var(--white);
+}
+
+.header-content {
+  position: relative;
+  max-width: 825px;
+  padding: 202px 0 201px 190px;
+  z-index: 1;
+}
+
+.header-content::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 444px;
+  content: "";
+  background-color: rgba(0, 91, 193, 0.6);
+  z-index: -1;
+}
+
+.header-title {
+  margin: 0 0 40px 0;
+  color: #fff;
+  font-family: var(--title-font);
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+
+.header-text {
+  margin: 0 0 40px 0;
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header-cta {
+  padding: 15px 40px;
+  border: 2px solid var(--white);
+  color: var(--white);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
   text-decoration: none;
 }
